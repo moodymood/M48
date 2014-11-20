@@ -483,7 +483,7 @@ int Matrix<T>::setToIdentity(const Matrix<T> &m) const
 template< typename T>
 int Matrix<T>::Inverse(const Matrix<T> &a)
 {
-	int static const n = a.getNumRows();
+/*	int static const n = a.getNumRows();
 	Matrix<T> x = Matrix<T>(n,n);
 	Matrix<T> b = Matrix<T>(n,n);
 	int index[n] = {};
@@ -535,3 +535,6 @@ int Matrix<T>::Inverse(const Matrix<T> &a)
         }
         */
 }
+
+template class Matrix<int>;
+
